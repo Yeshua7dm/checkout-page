@@ -19,74 +19,75 @@
       <h1 class="header-title">Checkout</h1>
     </header>
 
-    <main class="main">
+    <form action="">
+      <main class="main">
 
 
-      <section class="checkout">
-        <article class="checkout-item">
-          <div class="checkout-item__img">
-            <img src="./photo1.png" alt="school bag">
-          </div>
-          <div class="checkout-item__order-container">
-            <div>
-              <h6 class="checkout-item__order-title">Vintage Backbag</h6>
-              <div class="checkout-item__order-prices">
-                <p class="checkout-item__order-prices__current">$54.99</p>
-                <p class="checkout-item__order-prices__old">$94.99</p>
+        <section class="checkout">
+          <article class="checkout-item">
+            <div class="checkout-item__img">
+              <img src="./photo1.png" alt="school bag">
+            </div>
+            <div class="checkout-item__order-container">
+              <div class="checkout-item__order">
+                <h6 class="checkout-item__order-title">Vintage Backbag</h6>
+                <div class="checkout-item__order-prices">
+                  <p class="checkout-item__order-prices__current">$54.99</p>
+                  <p class="checkout-item__order-prices__old">$94.99</p>
+                </div>
+              </div>
+
+              <div class="checkout-item__quantity">
+                <span class="checkout-item__quantity-btn">
+                  <span class="material-icons"> remove </span>
+                </span>
+                <span class="checkout-item__quantity-qty">1</span>
+                <span class="checkout-item__quantity-btn">
+                  <span class="material-icons"> add </span>
+                </span>
               </div>
             </div>
+          </article>
 
-            <div class="checkout-item__quantity">
-              <span class="checkout-item__quantity-btn">
-                <span class="material-icons"> remove </span>
-              </span>
-              <span class="checkout-item__quantity-qty">1</span>
-              <span class="checkout-item__quantity-btn">
-                <span class="material-icons"> add </span>
-              </span>
+          <article class="checkout-item">
+            <div class="checkout-item__img">
+              <img src="./photo2.png" alt="school bag">
             </div>
-          </div>
-        </article>
-
-        <article class="checkout-item">
-          <div class="checkout-item__img">
-            <img src="./photo2.png" alt="school bag">
-          </div>
-          <div class="checkout-item__order-container">
-            <div>
-              <h6 class="checkout-item__order-title">Levi Shoes</h6>
-              <div class="checkout-item__order-prices">
-                <p class="checkout-item__order-prices__current">$74.99</p>
-                <p class="checkout-item__order-prices__old">$124.99</p>
+            <div class="checkout-item__order-container">
+              <div class="checkout-item__order">
+                <h6 class="checkout-item__order-title">Levi Shoes</h6>
+                <div class="checkout-item__order-prices">
+                  <p class="checkout-item__order-prices__current">$74.99</p>
+                  <p class="checkout-item__order-prices__old">$124.99</p>
+                </div>
+              </div>
+              <div class="checkout-item__quantity">
+                <span class="checkout-item__quantity-btn">
+                  <span class="material-icons"> remove </span>
+                </span>
+                <span class="checkout-item__quantity-qty">1</span>
+                <span class="checkout-item__quantity-btn">
+                  <span class="material-icons"> add </span>
+                </span>
               </div>
             </div>
-            <div class="checkout-item__quantity">
-              <span class="checkout-item__quantity-btn">
-                <span class="material-icons"> remove </span>
-              </span>
-              <span class="checkout-item__quantity-qty">1</span>
-              <span class="checkout-item__quantity-btn">
-                <span class="material-icons"> add </span>
-              </span>
+          </article>
+
+          <aside class="checkout-final">
+            <div class="checkout-final__item">
+              <p>Shipping</p>
+              <p>$19</p>
             </div>
-          </div>
-        </article>
-
-        <aside class="checkout-final">
-          <div class="checkout-final__item">
-            <p>Shipping</p>
-            <p>$19</p>
-          </div>
-          <div class="checkout-final__item">
-            <p>Total</p>
-            <p>$148.98</p>
-          </div>
-        </aside>
-      </section>
+            <div class="checkout-final__item">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </aside>
+        </section>
 
 
-      <section class="contact">
-        <form action="">
+        <section class="contact">
+
           <p>Contact information</p>
           <div class="contact-main">
             <article class="formField">
@@ -95,7 +96,7 @@
 
                 <span class="formField-input__icon material-icons">email</span>
 
-                <input type="email" placeholder="Enter your email..." name="email" class="formField-input__input">
+                <input required type="email" placeholder="Enter your email..." name="email" class="formField-input__input">
               </div>
             </article>
 
@@ -105,7 +106,7 @@
 
                 <span class="material-icons formField-input__icon">phone</span>
 
-                <input type="tel" placeholder="Enter your phone..." name="phone" class="formField-input__input">
+                <input required type="tel" placeholder="Enter your phone..." name="phone" class="formField-input__input">
               </div>
             </article>
           </div>
@@ -119,7 +120,7 @@
 
                 <span class="formField-input__icon material-icons">account_circle</span>
 
-                <input type="text" placeholder="Rodney Cotton" name="fullName" class="formField-input__input">
+                <input required type="text" placeholder="Rodney Cotton" name="fullName" class="formField-input__input">
               </div>
             </article>
 
@@ -129,7 +130,7 @@
 
                 <span class="material-icons formField-input__icon">home</span>
 
-                <input type="text" placeholder="Your address.." name="address" class="formField-input__input">
+                <input required type="text" placeholder="Your address.." name="address" class="formField-input__input">
               </div>
             </article>
 
@@ -139,7 +140,7 @@
 
                 <span class="material-icons formField-input__icon">location_city</span>
 
-                <input type="text" name="city" class="formField-input__input">
+                <input required type="text" name="city" class="formField-input__input">
               </div>
             </article>
 
@@ -166,25 +167,32 @@
 
                   <span class="material-icons formField-input__icon">markunread_mailbox</span>
 
-                  <input type="text" name="postalCode" class="formField-input__input">
+                  <input required type="text" placeholder="Your postal code.." name="postalCode" class="formField-input__input">
                 </div>
               </article>
 
             </div>
 
             <div class="formField-saveCheck">
-              <input type="checkbox" name="saveInfo" id="">
+              <input required type="checkbox" name="saveInfo" id="">
               <label for="saveInfo" class="formField-label">Save this information for next time</label>
             </div>
 
           </div>
-        </form>
-      </section>
+          <div class="btn-container">
+            <button type="submit" class="btn">Continue</button>
+          </div>
+        </section>
 
-    </main>
+      </main>
+    </form>
 
 
-    <footer></footer>
+    <footer class="footer">
+      <p class="footer-content">created by <a class="link underline" href="https://github.com/yeshua7dm">yeshua7dm</a> -
+        <a class="link" href="https://devChallenges.io">devChallenges.io</a>
+      </p>
+    </footer>
   </div>
 </body>
 
