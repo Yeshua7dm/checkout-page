@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <header class="header">
+      <h1 class="header-title">Checkout</h1>
+    </header>
+
+    <main class="main">
+
+
+      <section class="checkout">
+        <article class="checkout-item">
+          <div class="checkout-item__img">
+            <img src="./photo1.png" alt="school bag">
+          </div>
+          <div class="checkout-item__order-container">
+            <div>
+              <h6 class="checkout-item__order-title">Vintage Backbag</h6>
+              <div class="checkout-item__order-prices">
+                <p class="checkout-item__order-prices__current">$54.99</p>
+                <p class="checkout-item__order-prices__old">$94.99</p>
+              </div>
+            </div>
+
+            <div class="checkout-item__quantity">
+              <span class="checkout-item__quantity-btn">
+                <span class="material-icons"> remove </span>
+              </span>
+              <span class="checkout-item__quantity-qty">1</span>
+              <span class="checkout-item__quantity-btn">
+                <span class="material-icons"> add </span>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="checkout-item">
+          <div class="checkout-item__img">
+            <img src="./photo2.png" alt="school bag">
+          </div>
+          <div class="checkout-item__order-container">
+            <div>
+              <h6 class="checkout-item__order-title">Levi Shoes</h6>
+              <div class="checkout-item__order-prices">
+                <p class="checkout-item__order-prices__current">$74.99</p>
+                <p class="checkout-item__order-prices__old">$124.99</p>
+              </div>
+            </div>
+            <div class="checkout-item__quantity">
+              <span class="checkout-item__quantity-btn">
+                <span class="material-icons"> remove </span>
+              </span>
+              <span class="checkout-item__quantity-qty">1</span>
+              <span class="checkout-item__quantity-btn">
+                <span class="material-icons"> add </span>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="checkout-final">
+          <div class="checkout-final__item">
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div class="checkout-final__item">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </aside>
+      </section>
+
+
+      <section class="contact">
+        <form action="">
+          <p>Contact information</p>
+          <div class="contact-main">
+            <article class="formField">
+              <label for="email" class="formField-label">E-mail</label>
+              <div class="formField-input__container">
+
+                <span class="formField-input__icon material-icons">email</span>
+
+                <input type="email" placeholder="Enter your email..." name="email" class="formField-input__input">
+              </div>
+            </article>
+
+            <article class="formField">
+              <label for="phone" class="formField-label">Phone</label>
+              <div class="formField-input__container">
+
+                <span class="material-icons formField-input__icon">phone</span>
+
+                <input type="tel" placeholder="Enter your phone..." name="phone" class="formField-input__input">
+              </div>
+            </article>
+          </div>
+
+          <div class="contact-main">
+
+            <p>Shipping address</p>
+            <article class="formField">
+              <label for="fullName" class="formField-label">Full name</label>
+              <div class="formField-input__container">
+
+                <span class="formField-input__icon material-icons">account_circle</span>
+
+                <input type="text" placeholder="Rodney Cotton" name="fullName" class="formField-input__input">
+              </div>
+            </article>
+
+            <article class="formField">
+              <label for="phone" class="formField-label">Address</label>
+              <div class="formField-input__container">
+
+                <span class="material-icons formField-input__icon">home</span>
+
+                <input type="text" placeholder="Your address.." name="address" class="formField-input__input">
+              </div>
+            </article>
+
+            <article class="formField">
+              <label for="phone" class="formField-label">City</label>
+              <div class="formField-input__container">
+
+                <span class="material-icons formField-input__icon">location_city</span>
+
+                <input type="text" name="city" class="formField-input__input">
+              </div>
+            </article>
+
+
+            <div class="two-parts">
+
+              <article class="formField">
+                <label for="phone" class="formField-label">Country</label>
+                <div class="formField-input__container">
+
+                  <span class="material-icons formField-input__icon">location_city</span>
+                  <select class="formField-input__input" name="country">
+                    <option value="" disabled selected>Your country...</option>
+                    <option value="NGA">Nigeria</option>
+                    <option value="GHA">Ghana</option>
+                    <option value="SA">South Africa</option>
+                  </select>
+                </div>
+              </article>
+
+              <article class="formField">
+                <label for="phone" class="formField-label">Postal Code</label>
+                <div class="formField-input__container">
+
+                  <span class="material-icons formField-input__icon">markunread_mailbox</span>
+
+                  <input type="text" name="postalCode" class="formField-input__input">
+                </div>
+              </article>
+
+            </div>
+
+            <div class="formField-saveCheck">
+              <input type="checkbox" name="saveInfo" id="">
+              <label for="saveInfo" class="formField-label">Save this information for next time</label>
+            </div>
+
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+
+    <footer></footer>
+  </div>
+</body>
+
+</html>

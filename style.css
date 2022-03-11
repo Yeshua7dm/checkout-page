@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --gray1: #333;
+  --gray2: #4f4f4f;
+  --gray3: #828282;
+  --gray4: #bdbdbd;
+  --gray5: #e0e0e0;
+  --gray6: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+.container {
+  margin: 13px;
+  font-family: var(--font-family);
+}
+
+.header-title {
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 29px;
+}
+/*--------------------------------*\
+            MAIN
+\*--------------------------------*/
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+/*--------------------------------*\
+            CHECKOUT SECTION
+\*--------------------------------*/
+.checkout {
+  border-radius: 12px;
+  background-color: var(--gray6);
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-item {
+  margin: 26px 26px 0 26px;
+  column-gap: 20px;
+}
+.checkout-item__img {
+  width: 125px;
+  height: 125px;
+}
+.checkout-item__img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.checkout-item__order-prices,
+.checkout-item,
+.checkout-item__quantity,
+.checkout-final__item,
+.checkout-item__order-container {
+  display: flex;
+}
+
+.checkout-item__order-container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkout-item__order-prices {
+  column-gap: 20px;
+  align-items: center;
+}
+.checkout-item__order-title {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4e5150;
+}
+
+.checkout-item__order-prices__current {
+  color: #f2994a;
+  line-height: 17px;
+}
+
+.checkout-item__order-prices__old {
+  color: #4e5150;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration: line-through;
+}
+
+.checkout-item__quantity {
+  column-gap: 30px;
+  padding: 15px 10px;
+  border: 1px solid var(--gray3);
+  border-radius: 12px;
+}
+.checkout-item__quantity-btn {
+  background-color: var(--gray5);
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  color: var(--gray3);
+  cursor: pointer;
+}
+
+.checkout-item__quantity-qty {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.checkout-final {
+  margin: 25px;
+  margin-top: 87px;
+}
+.checkout-final__item {
+  justify-content: space-between;
+  border-top: 1px solid var(--gray4);
+  padding: 10px 0;
+}
+
+/*----------------------*\
+      CONTACT SECTION
+\*-----------------------*/
+.two-parts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+}
+
+.formField-label {
+  color: var(--gray2);
+  font-size: 10px;
+}
+.formField-input__container {
+  width: 100%;
+  border: 1px solid var(--gray3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  flex: 1;
+  color: var(--gray3);
+}
+.formField-input__input,
+.formField-input__input:focus {
+  border: none;
+  font-size: 12px;
+  line-height: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.formField-input__icon {
+  padding: 10px;
+}
+
+.formField-saveCheck {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
